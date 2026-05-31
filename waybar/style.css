@@ -10,9 +10,9 @@
 
 #custom-steam{
 	border-radius: 12px;
-  padding: 0 10px;
-  background:#1e1e2e;
-
+    padding: 0 10px;
+    background: @color1;
+    color: @foreground;
 }
 
 
@@ -20,7 +20,7 @@ window#waybar {
     /*background-color: rgba(43, 48, 59, 0.5);*/
     background-color:rgba(255, 255, 255, 0) ;
     border-bottom: 3px solid rgba(0, 0, 0, 0);
-    color: #ffffff;
+    color: @foreground;
     transition-property: background-color;
     transition-duration: .5s;
 
@@ -85,15 +85,17 @@ button:hover {
     border-radius: 7px;
 
     background: transparent;
-    color: #a6adc8;
+    color: @foreground;
 
     transition:
         all 0.25s ease-in-out;
 }
 
 #workspaces button:hover {
-    background: rgba(255, 255, 255, 0.81);
-    color: black;
+    background: alpha(@color4, 0.4);
+    color: @foreground;
+    border-radius: 7px;
+    box-shadow: none;
 }
 
 #workspaces button.focused {
@@ -102,8 +104,8 @@ button:hover {
 }
 
 #workspaces button.active {
-    background: rgba(234, 234, 234, 0.884);
-    color: black;
+    background: @color4;
+    color: @background;
 
     padding-left: 12px;
     padding-right: 12px;
@@ -112,8 +114,8 @@ button:hover {
 }
 
 #workspaces button.occupied {
-    color: black;
-    background: rgba(150, 150, 150, 0.742);
+    color: @foreground;
+    background: alpha(@color2,0.6);
 }
 
 
@@ -163,30 +165,30 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #custom-power {
-    margin: 4px 6px;
-    padding: 0 14px;
+  margin: 4px 6px;
+  padding: 0 14px;
 
-    border-radius: 12px;
+  border-radius: 12px;
 
-    background: #1e1e2e;
+  background: #1e1e2e;
 
-    color: #ff9100;
+  color: #ff9100;
 
-    transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 #custom-power:hover {
-    background: rgb(255, 255, 255);
-    color: #000000;
+  background: rgb(255, 255, 255);
+  color: #000000;
 }
 
 #window,
 #workspaces {
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     padding: 4px 12px;
     margin:6px;
     border-radius: 14px;
@@ -203,7 +205,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     padding: 4px 20px;
     margin:6px;
     border-radius: 14px;
@@ -211,7 +213,7 @@ button:hover {
 }
 
 #battery {
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     padding: 4px 12px;
     margin:6px;
     border-radius: 14px;
@@ -265,7 +267,7 @@ label:focus {
 }
 
 #cpu {
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     padding: 4px 12px;
     margin:6px;
     border-radius: 14px;
@@ -273,7 +275,7 @@ label:focus {
 }
 
 #memory {
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     padding: 4px 12px;
     margin:6px;
     border-radius: 14px;
@@ -281,7 +283,7 @@ label:focus {
 }
 
 #disk {
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     padding: 4px 12px;
     margin:6px;
     border-radius: 14px;
@@ -289,14 +291,14 @@ label:focus {
 }
 
 #backlight {
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     padding: 4px 12px;
     margin:6px;
     border-radius: 14px;
 }
 
 #network {
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     padding: 4px 12px;
     margin:6px;
     border-radius: 14px;
@@ -307,11 +309,10 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #1e1e2e;
     padding: 4px 12px;
     margin:6px;
     border-radius: 14px;
-    background-color: #1e1e2e;
+    background-color: alpha(@background,0.8);
     color: #ffffff;
 }
 

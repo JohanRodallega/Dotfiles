@@ -1,3 +1,5 @@
+@import "/home/johanrodallega/.cache/wal/colors-rofi-dark.rasi"
+
 configuration {
     modi: "drun";
     show-icons: true;
@@ -5,20 +7,21 @@ configuration {
     font: "JetBrainsMono Nerd Font 12";
 
     drun-display-format: "{name}";
-    element-icon {
-    size: 28px;
 }
+
+element-icon {
+    size: 28px;
 }
 
 * {
-    bg-col:    #11111bdd;
-    bg2-col:   #1e1e2ecc;
+    bg-col: @background;
+    bg2-col: @active-background;
 
-    border-col: #cba6f7;
+    border-col: @selected-normal-background;
 
-    text-col:  #cdd6f4;
+    text-col: @foreground;
 
-    selected-col: #cba6f7;
+    selected-col: @selected-normal-background;
 
     width: 600;
 }
