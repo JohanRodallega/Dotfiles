@@ -15,6 +15,16 @@
     color: @foreground;
 }
 
+#custom-notifications {
+    background-color: alpha(@background,0.8);
+    color: @foreground;
+
+    padding: 0 12px;
+    margin: 6px;
+
+    border-radius: 14px;
+}
+
 
 window#waybar {
     /*background-color: rgba(43, 48, 59, 0.5);*/
