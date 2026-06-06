@@ -1,0 +1,102 @@
+@import "/home/johanrodallega/.cache/wal/colors-rofi-dark.rasi"
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+
+    font: "JetBrainsMono Nerd Font 12";
+
+    drun-display-format: "{name}";
+}
+
+element-icon {
+    size: 28px;
+}
+
+* {
+    bg-col: @background;
+    bg2-col: @active-background;
+
+    border-col: @selected-normal-background;
+
+    text-col: @foreground;
+
+    selected-col: @selected-normal-background;
+
+    width: 600;
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+
+    fullscreen: false;
+
+    border-radius: 18px;
+    border: 2px;
+
+    border-color: @border-col;
+
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: transparent;
+    padding: 20px;
+}
+
+inputbar {
+    children: [prompt, entry];
+
+    background-color: @bg2-col;
+
+    border-radius: 12px;
+
+    padding: 12px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @selected-col;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @text-col;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+
+    background-color: transparent;
+
+    spacing: 8px;
+
+    margin: 10px 0 0;
+}
+
+element {
+    padding: 10px;
+
+    border-radius: 12px;
+
+    background-color: transparent;
+
+    text-color: @text-col;
+}
+
+element selected {
+    background-color: @bg2-col;
+    text-color: @selected-col;
+}
+
+element-icon {
+    size: 28px;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+

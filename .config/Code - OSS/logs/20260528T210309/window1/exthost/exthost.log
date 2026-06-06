@@ -1,0 +1,22 @@
+2026-05-28 21:03:12.267 [info] Extension host with pid 9810 started
+2026-05-28 21:03:12.267 [info] Skipping acquiring lock for /home/johanrodallega/.config/Code - OSS/User/workspaceStorage/82cb47ec98e4a6ba8509018935f79df9.
+2026-05-28 21:03:12.305 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-05-28 21:03:12.346 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-28 21:03:12.404 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-05-28 21:03:12.459 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-05-28 21:03:12.552 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-28 21:03:12.734 [info] Eager extensions activated
+2026-05-28 21:03:12.797 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-28 21:03:12.810 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-28 21:03:12.831 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2026-05-28 21:03:15.702 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2026-05-28 21:13:42.532 [warning] TextEditor is closed/disposed
+2026-05-28 21:13:42.532 [warning] TextEditor is closed/disposed
+2026-05-28 21:13:42.549 [warning] ExtHostTextEditorOptions 'setCursorStyle' failed:'
+2026-05-28 21:13:42.549 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model2)
+2026-05-28 21:21:19.275 [warning] TextEditor is closed/disposed
+2026-05-28 21:21:19.276 [warning] TextEditor is closed/disposed
+2026-05-28 21:21:19.288 [warning] ExtHostTextEditorOptions 'setCursorStyle' failed:'
+2026-05-28 21:21:19.288 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model3)
+2026-05-28 21:21:20.484 [info] Extension host terminating: received terminate message from renderer
+2026-05-28 21:21:20.513 [info] Extension host with pid 9810 exiting with code 0

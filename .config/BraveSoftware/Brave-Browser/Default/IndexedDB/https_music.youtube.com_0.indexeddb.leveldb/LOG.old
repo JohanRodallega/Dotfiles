@@ -1,0 +1,10 @@
+2026/06/05-00:14:35.408 6273 Reusing MANIFEST /home/johanrodallega/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/05-00:14:35.408 6273 Recovering log #133
+2026/06/05-00:14:35.410 6273 Reusing old log /home/johanrodallega/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/000133.log 
+2026/06/05-00:14:35.410 6273 Delete type=2 #135
+2026/06/05-00:14:37.418 6273 Compacting 1@1 + 1@2 files
+2026/06/05-00:14:37.428 6273 Generated table #136@1: 955 keys, 169273 bytes
+2026/06/05-00:14:37.428 6273 Compacted 1@1 + 1@2 files => 169273 bytes
+2026/06/05-00:14:37.430 6273 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/06/05-00:14:37.430 6273 Delete type=2 #134
+2026/06/05-00:14:37.430 6273 Delete type=2 #131

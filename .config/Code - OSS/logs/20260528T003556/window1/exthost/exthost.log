@@ -1,0 +1,30 @@
+2026-05-28 00:35:59.965 [info] Extension host with pid 25318 started
+2026-05-28 00:36:00.012 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-05-28 00:36:00.057 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-28 00:36:00.111 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-05-28 00:36:00.120 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-05-28 00:36:00.196 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-28 00:36:00.292 [info] Eager extensions activated
+2026-05-28 00:36:00.317 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-28 00:36:00.329 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-28 00:36:24.647 [info] Extension host terminating: received terminate message from renderer
+2026-05-28 00:36:24.656 [info] Extension host with pid 25318 exiting with code 0
+2026-05-28 00:36:26.351 [info] Extension host with pid 26294 started
+2026-05-28 00:36:26.351 [info] Skipping acquiring lock for /home/johanrodallega/.config/Code - OSS/User/workspaceStorage/82cb47ec98e4a6ba8509018935f79df9.
+2026-05-28 00:36:26.424 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-05-28 00:36:26.454 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-28 00:36:26.505 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2026-05-28 00:36:26.653 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-28 00:36:26.741 [info] Eager extensions activated
+2026-05-28 00:36:26.748 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-28 00:36:26.751 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-28 00:36:29.533 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2026-05-28 00:36:31.539 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2026-05-28 00:37:00.110 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2026-05-28 00:37:01.291 [error] Error: ENOENT: no such file or directory, open '/home/johanrodallega/.config/Code - OSS/User/globalStorage/vscodevim.vim/.registers'
+2026-05-28 00:43:03.693 [warning] TextEditor is closed/disposed
+2026-05-28 00:43:03.693 [warning] TextEditor is closed/disposed
+2026-05-28 00:43:03.708 [warning] ExtHostTextEditorOptions 'setCursorStyle' failed:'
+2026-05-28 00:43:03.708 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2026-05-28 00:43:05.024 [info] Extension host terminating: received terminate message from renderer
+2026-05-28 00:43:05.049 [info] Extension host with pid 26294 exiting with code 0

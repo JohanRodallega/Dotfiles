@@ -1,0 +1,11 @@
+2026-05-28 00:35:59.097 [info] Started local extension host with pid 25318.
+2026-05-28 00:35:59.126 [info] Started initializing default profile extensions in extensions installation folder. file:///home/johanrodallega/.vscode-oss/extensions
+2026-05-28 00:35:59.531 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/johanrodallega/.vscode-oss/extensions
+2026-05-28 00:36:00.184 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-05-28 00:36:02.482 [info] [perf] Render performance baseline is 29ms
+2026-05-28 00:36:05.184 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-05-28 00:36:25.565 [info] Started local extension host with pid 26294.
+2026-05-28 00:36:26.166 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-05-28 00:36:28.197 [info] [perf] Render performance baseline is 26ms
+2026-05-28 00:36:31.166 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-05-28 00:37:01.294 [error] An unknown error occurred. Please consult the log for more details.
