@@ -6,6 +6,9 @@
 - Wlogout
 - Pywal
 - Kitty
+- Fastfetch
+- Swaync
+- Wallpapers
 
 ## Restaurar paquetes
 
