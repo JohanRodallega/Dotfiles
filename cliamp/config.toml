@@ -1,0 +1,7 @@
+eq_preset = "Custom"
+
+eq = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+theme = ""
+visualizer = "Ascii"
+repeat = "Off"
+shuffle = true

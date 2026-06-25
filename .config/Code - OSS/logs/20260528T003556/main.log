@@ -1,8 +1,0 @@
-2026-05-28 00:35:56.547 [info] StorageMainService: creating application shared storage
-2026-05-28 00:35:56.655 [info] [shared storage] Creating shared storage database at '/home/johanrodallega/.vscode-oss-shared/sharedStorage/state.vscdb' (wasCreated: true)
-2026-05-28 00:35:56.655 [info] [shared storage] Initializing fallback application storage (path: /home/johanrodallega/.config/Code - OSS/User/globalStorage/state.vscdb)
-2026-05-28 00:35:56.659 [info] [shared storage] Fallback application storage initialized with 3 items
-2026-05-28 00:35:56.660 [info] update#setState disabled
-2026-05-28 00:35:56.660 [info] update#ctor - updates are disabled as there is no update URL
-2026-05-28 00:36:24.657 [info] Extension host with pid 25318 exited with code: 0, signal: unknown.
-2026-05-28 00:43:05.050 [info] Extension host with pid 26294 exited with code: 0, signal: unknown.

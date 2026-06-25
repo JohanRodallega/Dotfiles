@@ -1,6 +1,0 @@
-2026/06/05-14:17:05.045 3118 Reusing MANIFEST /home/johanrodallega/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/06/05-14:17:05.046 3118 Recovering log #3
-2026/06/05-14:17:05.148 3118 Reusing old log /home/johanrodallega/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/000003.log 
-2026/06/05-14:17:12.798 311a Level-0 table #5: started
-2026/06/05-14:17:12.850 311a Level-0 table #5: 1546725 bytes OK
-2026/06/05-14:17:12.860 311a Delete type=0 #3

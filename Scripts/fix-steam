@@ -1,0 +1,15 @@
+#!/bin/bash
+
+killall steam 2>/dev/null
+killall wineserver 2>/dev/null
+killall wine 2>/dev/null
+killall pressure-vessel 2>/dev/null
+killall gamescope 2>/dev/null
+
+rm -rf ~/.nv/GLCache
+
+echo "Steam y Wine Clean."
+
+WRL_NO_HADWARE_CURSORS=1 steam
+
+

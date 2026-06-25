@@ -11,12 +11,19 @@ done | rofi -dmenu -show-icons -p "Wallpapers")
 wallpaper="$WALLDIR/$chosen"
 
 # Cambiar wallpaper
-hyprctl hyprpaper preload "$wallpaper"
-hyprctl hyprpaper wallpaper ",$wallpaper"
+effects=("grow" "outer" "wave" "wipe")
+
+effect=${effects[$RANDOM % ${#effects[@]}]}
+
+awww img "$wallpaper" \
+  -t "$effect" \
+  --transition-duration 2 \
+  --transition-fps 180 \
+  --transition-pos 0.1,0.1 \
+  --transition-bezier .54,0,.34,.99
 
 # Pywal
 wal -i "$wallpaper"
 
 # Reiniciar waybar
-pkill waybar
-waybar &
+killall -SIGUSR2 waybar

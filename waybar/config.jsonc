@@ -10,7 +10,10 @@
         "hyprland/workspaces",
         "hyprland/submap",
       //  "sway/scratchpad",
-        "custom/media"
+        "custom/media",
+        "custom/spotify",
+        "custom/weather",
+        "custom/updates",
     ],
     "modules-center": [
         "hyprland/windows",
@@ -22,8 +25,8 @@
         "pulseaudio",
         "network",
         //"power-profiles-daemon",//
-        "cpu",
-        "memory",
+        //"cpu",//
+        //"memory",//
         "temperature",
         "backlight",
         "keyboard-state",
@@ -31,6 +34,7 @@
         "battery",
         "battery#bat2",
         "tray",
+        "custom/notifications",
         "custom/power"
     ],
      //Modules configuration
@@ -56,6 +60,8 @@
              //"default": ""
          }
      },
+
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -65,6 +71,12 @@
             "unlocked": ""
         }
     },
+
+    "custom/weather": {
+    "exec": "~/.config/waybar/scripts/weather.sh",
+    "return-type": "json",
+    "interval": 1800
+      },
     "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -109,18 +121,22 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
-        "spacing": 10,
+        //"icon-size": 21,//
+        "spacing": 10
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         // }
     },
-    "clock": {
         // "timezone": "America/New_York",
+
+    "clock": {
+        "format": "{:%a %d %b %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
-    },
+      },
+     
+
     "cpu": {
         "format": "{usage}%  ",
         "tooltip": false
@@ -134,7 +150,7 @@
         "critical-threshold": 85,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""]
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -172,7 +188,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "  {signalStrength}%",
+        "format-wifi": " ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
@@ -181,27 +197,29 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "on-click": "kitty wiremix",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon}󰂯",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "",
+        "format-source": "",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "󰕾",
+            "headset": "󰕾",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["󰕿", "󰖀", "󰕾"]
+            }
+
         },
-        "on-click": "pavucontrol"
-    },
     "custom/media": {
         "format": "{icon} {text}",
         "return-type": "json",
         "max-length": 40,
+        "interval": 2,
         "format-icons": {
             "spotify": "",
             "default": "🎜"
@@ -210,6 +228,22 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
+
+"custom/updates": {
+    "exec": "~/.config/waybar/scripts/updates.sh",
+    "return-type": "json",
+    "interval": 1800,
+    "on-click": "kitty sudo pacman -Syu"
+},
+
+    "custom/notifications": {
+    "format": "󰂚",
+    "tooltip": false,
+    "on-click": "swaync-client -t",
+    "on-click-right": "swaync-client -C"
+
+    },
+
     "custom/power": {
         "format" : "⏻",
 		    "tooltip": false,

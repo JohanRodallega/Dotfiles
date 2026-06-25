@@ -4,7 +4,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     /*font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
-    font-family: JetBrainsMono;
+    font-family:"JetBrainsMono Nerd Font", "otf-font-awesome";
     font-size: 13px;
 }
 
@@ -26,9 +26,9 @@
 }
 
 #custom-updates {
-    background-color: #1e1e2e;
-
+    background-color: @background;
     color: @foreground;
+
 
     margin: 6px;
     padding: 4px 12px;
@@ -37,10 +37,8 @@
 }
 
 #custom-weather {
-    background-color: #1e1e2e;
-
+    background-color: @background;
     color: @foreground;
-
     margin: 6px;
     padding: 4px 12px;
 
@@ -168,10 +166,10 @@ button:hover {
 #disk,
 
 #temperature {
-    margin: 4px 0;
-    padding: 0 16px;
+    margin: 6px;
+    padding: 4px 16px;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     background: rgba(255,255,255,0.05);
 
@@ -201,10 +199,10 @@ button:hover {
 }
 
 #custom-power {
-  margin: 4px 6px;
+  margin: 6px;
   padding: 0 16px;
 
-  border-radius: 12px;
+  border-radius: 14px;
 
   background: #1e1e2e;
 
@@ -392,7 +390,11 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: alpha(@background,0.8);
+    padding: 4px 16px;
+    margin:6px;
+    border-radius: 14px;
+
 }
 
 #tray > .passive {
